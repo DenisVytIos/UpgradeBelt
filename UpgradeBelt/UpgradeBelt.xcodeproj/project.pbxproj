@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9229C13A243773700011F37C /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9229C139243773700011F37C /* GradeTableViewCell.swift */; };
 		92B24B2C24373F2000455E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B2B24373F2000455E0F /* AppDelegate.swift */; };
 		92B24B2E24373F2000455E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B2D24373F2000455E0F /* SceneDelegate.swift */; };
-		92B24B3024373F2000455E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B2F24373F2000455E0F /* ViewController.swift */; };
+		92B24B3024373F2000455E0F /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B2F24373F2000455E0F /* GradesViewController.swift */; };
 		92B24B3324373F2000455E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B24B3124373F2000455E0F /* Main.storyboard */; };
 		92B24B3624373F2000455E0F /* UpgradeBelt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B3424373F2000455E0F /* UpgradeBelt.xcdatamodeld */; };
 		92B24B3824373F2300455E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B24B3724373F2300455E0F /* Assets.xcassets */; };
@@ -36,10 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9229C139243773700011F37C /* GradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
 		92B24B2824373F2000455E0F /* UpgradeBelt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpgradeBelt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B24B2B24373F2000455E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B24B2D24373F2000455E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92B24B2F24373F2000455E0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92B24B2F24373F2000455E0F /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		92B24B3224373F2000455E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92B24B3524373F2000455E0F /* UpgradeBelt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UpgradeBelt.xcdatamodel; sourceTree = "<group>"; };
 		92B24B3724373F2300455E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +80,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9229C13424376DD40011F37C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9229C139243773700011F37C /* GradeTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		925729F72438518400479528 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				925729F82438519F00479528 /* Grades */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		925729F82438519F00479528 /* Grades */ = {
+			isa = PBXGroup;
+			children = (
+				92B24B2F24373F2000455E0F /* GradesViewController.swift */,
+			);
+			path = Grades;
+			sourceTree = "<group>";
+		};
+		925729FA243851E300479528 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		925729FB2438521200479528 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92B24B3724373F2300455E0F /* Assets.xcassets */,
+				92B24B3924373F2300455E0F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		925729FC2438526100479528 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9229C13424376DD40011F37C /* Cells */,
+				925729FA243851E300479528 /* Models */,
+				925729F72438518400479528 /* Screens */,
+				92B24B2B24373F2000455E0F /* AppDelegate.swift */,
+				92B24B2D24373F2000455E0F /* SceneDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		925729FD243852B100479528 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92B24B3124373F2000455E0F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		92B24B1F24373F2000455E0F = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +163,9 @@
 		92B24B2A24373F2000455E0F /* UpgradeBelt */ = {
 			isa = PBXGroup;
 			children = (
-				92B24B2B24373F2000455E0F /* AppDelegate.swift */,
-				92B24B2D24373F2000455E0F /* SceneDelegate.swift */,
-				92B24B2F24373F2000455E0F /* ViewController.swift */,
-				92B24B3124373F2000455E0F /* Main.storyboard */,
-				92B24B3724373F2300455E0F /* Assets.xcassets */,
-				92B24B3924373F2300455E0F /* LaunchScreen.storyboard */,
+				925729FC2438526100479528 /* Classes */,
+				925729FD243852B100479528 /* Views */,
+				925729FB2438521200479528 /* Resources */,
 				92B24B3C24373F2300455E0F /* Info.plist */,
 				92B24B3424373F2000455E0F /* UpgradeBelt.xcdatamodeld */,
 			);
@@ -262,7 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B24B3024373F2000455E0F /* ViewController.swift in Sources */,
+				9229C13A243773700011F37C /* GradeTableViewCell.swift in Sources */,
+				92B24B3024373F2000455E0F /* GradesViewController.swift in Sources */,
 				92B24B2C24373F2000455E0F /* AppDelegate.swift in Sources */,
 				92B24B2E24373F2000455E0F /* SceneDelegate.swift in Sources */,
 				92B24B3624373F2000455E0F /* UpgradeBelt.xcdatamodeld in Sources */,
