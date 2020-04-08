@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9229C13A243773700011F37C /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9229C139243773700011F37C /* GradeTableViewCell.swift */; };
+		9249C14E243D981D00A05E5E /* grading.json in Resources */ = {isa = PBXBuildFile; fileRef = 9249C14D243D981D00A05E5E /* grading.json */; };
 		92B24B2C24373F2000455E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B2B24373F2000455E0F /* AppDelegate.swift */; };
 		92B24B2E24373F2000455E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B2D24373F2000455E0F /* SceneDelegate.swift */; };
 		92B24B3024373F2000455E0F /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B2F24373F2000455E0F /* GradesViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		9229C139243773700011F37C /* GradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
+		9249C14D243D981D00A05E5E /* grading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grading.json; sourceTree = "<group>"; };
 		92B24B2824373F2000455E0F /* UpgradeBelt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpgradeBelt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B24B2B24373F2000455E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B24B2D24373F2000455E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		925729FB2438521200479528 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9249C14D243D981D00A05E5E /* grading.json */,
 				92B24B3724373F2300455E0F /* Assets.xcassets */,
 				92B24B3924373F2300455E0F /* LaunchScreen.storyboard */,
 			);
@@ -294,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9249C14E243D981D00A05E5E /* grading.json in Resources */,
 				92B24B3B24373F2300455E0F /* LaunchScreen.storyboard in Resources */,
 				92B24B3824373F2300455E0F /* Assets.xcassets in Resources */,
 				92B24B3324373F2000455E0F /* Main.storyboard in Resources */,
