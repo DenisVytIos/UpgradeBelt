@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		9229C13A243773700011F37C /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9229C139243773700011F37C /* GradeTableViewCell.swift */; };
 		9249C14E243D981D00A05E5E /* grading.json in Resources */ = {isa = PBXBuildFile; fileRef = 9249C14D243D981D00A05E5E /* grading.json */; };
+		924C2C22243DF6BF00AC015F /* LocalJsonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C2C21243DF6BF00AC015F /* LocalJsonDataManager.swift */; };
+		924C2C23243DF8AE00AC015F /* LocalJsonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C2C21243DF6BF00AC015F /* LocalJsonDataManager.swift */; };
+		9291DAB9243DB172004AE518 /* GradingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291DAB8243DB172004AE518 /* GradingItem.swift */; };
+		9291DABB243DB21C004AE518 /* GradingPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291DABA243DB21C004AE518 /* GradingPattern.swift */; };
+		9291DABD243DB284004AE518 /* TerminologyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291DABC243DB284004AE518 /* TerminologyItem.swift */; };
+		9291DABF243DB2EF004AE518 /* GradingMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291DABE243DB2EF004AE518 /* GradingMaterial.swift */; };
 		92B24B2C24373F2000455E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B2B24373F2000455E0F /* AppDelegate.swift */; };
 		92B24B2E24373F2000455E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B2D24373F2000455E0F /* SceneDelegate.swift */; };
 		92B24B3024373F2000455E0F /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B2F24373F2000455E0F /* GradesViewController.swift */; };
@@ -40,6 +46,11 @@
 /* Begin PBXFileReference section */
 		9229C139243773700011F37C /* GradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
 		9249C14D243D981D00A05E5E /* grading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grading.json; sourceTree = "<group>"; };
+		924C2C21243DF6BF00AC015F /* LocalJsonDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJsonDataManager.swift; sourceTree = "<group>"; };
+		9291DAB8243DB172004AE518 /* GradingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingItem.swift; sourceTree = "<group>"; };
+		9291DABA243DB21C004AE518 /* GradingPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingPattern.swift; sourceTree = "<group>"; };
+		9291DABC243DB284004AE518 /* TerminologyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminologyItem.swift; sourceTree = "<group>"; };
+		9291DABE243DB2EF004AE518 /* GradingMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingMaterial.swift; sourceTree = "<group>"; };
 		92B24B2824373F2000455E0F /* UpgradeBelt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpgradeBelt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B24B2B24373F2000455E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B24B2D24373F2000455E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +101,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		924C2C20243DF65600AC015F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				924C2C21243DF6BF00AC015F /* LocalJsonDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		925729F72438518400479528 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +128,7 @@
 		925729FA243851E300479528 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9291DAB7243DB114004AE518 /* GradingMaterial */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,6 +146,7 @@
 		925729FC2438526100479528 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				924C2C20243DF65600AC015F /* Managers */,
 				9229C13424376DD40011F37C /* Cells */,
 				925729FA243851E300479528 /* Models */,
 				925729F72438518400479528 /* Screens */,
@@ -141,6 +162,17 @@
 				92B24B3124373F2000455E0F /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9291DAB7243DB114004AE518 /* GradingMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				9291DABE243DB2EF004AE518 /* GradingMaterial.swift */,
+				9291DAB8243DB172004AE518 /* GradingItem.swift */,
+				9291DABA243DB21C004AE518 /* GradingPattern.swift */,
+				9291DABC243DB284004AE518 /* TerminologyItem.swift */,
+			);
+			path = GradingMaterial;
 			sourceTree = "<group>";
 		};
 		92B24B1F24373F2000455E0F = {
@@ -325,11 +357,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9291DABD243DB284004AE518 /* TerminologyItem.swift in Sources */,
+				9291DABF243DB2EF004AE518 /* GradingMaterial.swift in Sources */,
 				9229C13A243773700011F37C /* GradeTableViewCell.swift in Sources */,
 				92B24B3024373F2000455E0F /* GradesViewController.swift in Sources */,
 				92B24B2C24373F2000455E0F /* AppDelegate.swift in Sources */,
+				9291DABB243DB21C004AE518 /* GradingPattern.swift in Sources */,
+				9291DAB9243DB172004AE518 /* GradingItem.swift in Sources */,
 				92B24B2E24373F2000455E0F /* SceneDelegate.swift in Sources */,
 				92B24B3624373F2000455E0F /* UpgradeBelt.xcdatamodeld in Sources */,
+				924C2C22243DF6BF00AC015F /* LocalJsonDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B24B5124373F2300455E0F /* UpgradeBeltUITests.swift in Sources */,
+				924C2C23243DF8AE00AC015F /* LocalJsonDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,7 +20,51 @@ class GradesViewController: UITableViewController {
         gradesTableView.delegate = self
         gradesTableView.dataSource = self
         
+        
+        let data = LocalJsonDataManager().gradingMaterial
+//        
+        print(data)
+        
+        
+//        guard let path = Bundle.main.path(forResource: "grading", ofType: "json") else { return }
+//         let url = URL(fileURLWithPath: path)
+//        do {
+//             let data = try  Data(contentsOf: url)
+//            print(data)
+//            
+//            let gradingJson = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+//           print(gradingJson)
+//            
+//            let decoder = JSONDecoder()
+//            var decoderOfferModel: GradingMaterial?
+////            if data != nil {
+//            decoderOfferModel = try? decoder.decode(GradingMaterial.self, from: data)
+////            }
+//            
+//            print(decoderOfferModel)
+            
+//            let gradingJson = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+//
+//            guard let array = gradingJson as? [Any] else { return }
+//
+//            for user in array {
+//                guard let userDict = user as? [String : Any] else { return }
+//                print(userDict)
+//            }
+            
+            
+            
+//            let grading = try JSONDecoder().decode([String : Int].self, from: data)
+////            print(grading)
+//        } catch  {
+//            print(error)
+//        }
+        
+        
     }
+ 
+    
+    
 }
 
 extension GradesViewController {
