@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9229C13A243773700011F37C /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9229C139243773700011F37C /* GradeTableViewCell.swift */; };
-		9249C14E243D981D00A05E5E /* grading.json in Resources */ = {isa = PBXBuildFile; fileRef = 9249C14D243D981D00A05E5E /* grading.json */; };
+		9249C14E243D981D00A05E5E /* grading1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9249C14D243D981D00A05E5E /* grading1.json */; };
 		924C2C22243DF6BF00AC015F /* LocalJsonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C2C21243DF6BF00AC015F /* LocalJsonDataManager.swift */; };
 		924C2C23243DF8AE00AC015F /* LocalJsonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C2C21243DF6BF00AC015F /* LocalJsonDataManager.swift */; };
 		9291DAB9243DB172004AE518 /* GradingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291DAB8243DB172004AE518 /* GradingItem.swift */; };
@@ -24,6 +24,8 @@
 		92B24B3B24373F2300455E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B24B3924373F2300455E0F /* LaunchScreen.storyboard */; };
 		92B24B4624373F2300455E0F /* UpgradeBeltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B4524373F2300455E0F /* UpgradeBeltTests.swift */; };
 		92B24B5124373F2300455E0F /* UpgradeBeltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B24B5024373F2300455E0F /* UpgradeBeltUITests.swift */; };
+		92EC9690243FA3E000C88A6D /* grading.json in Resources */ = {isa = PBXBuildFile; fileRef = 92EC968F243FA3DF00C88A6D /* grading.json */; };
+		92F3DEAA2441B56200A86265 /* ColorBeltModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3DEA92441B56200A86265 /* ColorBeltModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		9229C139243773700011F37C /* GradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
-		9249C14D243D981D00A05E5E /* grading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grading.json; sourceTree = "<group>"; };
+		9249C14D243D981D00A05E5E /* grading1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grading1.json; sourceTree = "<group>"; };
 		924C2C21243DF6BF00AC015F /* LocalJsonDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJsonDataManager.swift; sourceTree = "<group>"; };
 		9291DAB8243DB172004AE518 /* GradingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingItem.swift; sourceTree = "<group>"; };
 		9291DABA243DB21C004AE518 /* GradingPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingPattern.swift; sourceTree = "<group>"; };
@@ -66,6 +68,8 @@
 		92B24B4C24373F2300455E0F /* UpgradeBeltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpgradeBeltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B24B5024373F2300455E0F /* UpgradeBeltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeBeltUITests.swift; sourceTree = "<group>"; };
 		92B24B5224373F2300455E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92EC968F243FA3DF00C88A6D /* grading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grading.json; sourceTree = "<group>"; };
+		92F3DEA92441B56200A86265 /* ColorBeltModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBeltModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 		925729FA243851E300479528 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				92F3DEA82441B53500A86265 /* GradingModel */,
 				9291DAB7243DB114004AE518 /* GradingMaterial */,
 			);
 			path = Models;
@@ -136,7 +141,8 @@
 		925729FB2438521200479528 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9249C14D243D981D00A05E5E /* grading.json */,
+				9249C14D243D981D00A05E5E /* grading1.json */,
+				92EC968F243FA3DF00C88A6D /* grading.json */,
 				92B24B3724373F2300455E0F /* Assets.xcassets */,
 				92B24B3924373F2300455E0F /* LaunchScreen.storyboard */,
 			);
@@ -223,6 +229,14 @@
 				92B24B5224373F2300455E0F /* Info.plist */,
 			);
 			path = UpgradeBeltUITests;
+			sourceTree = "<group>";
+		};
+		92F3DEA82441B53500A86265 /* GradingModel */ = {
+			isa = PBXGroup;
+			children = (
+				92F3DEA92441B56200A86265 /* ColorBeltModel.swift */,
+			);
+			path = GradingModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,7 +343,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9249C14E243D981D00A05E5E /* grading.json in Resources */,
+				92EC9690243FA3E000C88A6D /* grading.json in Resources */,
+				9249C14E243D981D00A05E5E /* grading1.json in Resources */,
 				92B24B3B24373F2300455E0F /* LaunchScreen.storyboard in Resources */,
 				92B24B3824373F2300455E0F /* Assets.xcassets in Resources */,
 				92B24B3324373F2000455E0F /* Main.storyboard in Resources */,
@@ -365,6 +380,7 @@
 				9291DABB243DB21C004AE518 /* GradingPattern.swift in Sources */,
 				9291DAB9243DB172004AE518 /* GradingItem.swift in Sources */,
 				92B24B2E24373F2000455E0F /* SceneDelegate.swift in Sources */,
+				92F3DEAA2441B56200A86265 /* ColorBeltModel.swift in Sources */,
 				92B24B3624373F2000455E0F /* UpgradeBelt.xcdatamodeld in Sources */,
 				924C2C22243DF6BF00AC015F /* LocalJsonDataManager.swift in Sources */,
 			);

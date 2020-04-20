@@ -13,6 +13,13 @@ class GradesViewController: UITableViewController {
    
     @IBOutlet var gradesTableView: UITableView!
     
+    var name: String?
+    var numberOfSectionsInt: Int?
+    
+    var gradingMaterialDictionary: [String : AnyObject] = [:]
+    var gratingItemInColorBeltsDictionary: [String : AnyObject]?
+    
+    
     var cellID = "GradeTableViewCell"
     
     override func viewDidLoad() {
@@ -21,62 +28,40 @@ class GradesViewController: UITableViewController {
         gradesTableView.dataSource = self
         
         
-        let data = LocalJsonDataManager().gradingMaterial
-//        
-        print(data)
+        self.gradingMaterialDictionary = LocalJsonDataManager.shared.gradingMaterialDictionary
         
+        let patternsInGratingItemArray = gratingItemInColorBeltsDictionary?["patterns"]
+        let terminologyInGratingItemArray = gratingItemInColorBeltsDictionary?["terminology"]
         
-//        guard let path = Bundle.main.path(forResource: "grading", ofType: "json") else { return }
-//         let url = URL(fileURLWithPath: path)
-//        do {
-//             let data = try  Data(contentsOf: url)
-//            print(data)
-//            
-//            let gradingJson = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-//           print(gradingJson)
-//            
-//            let decoder = JSONDecoder()
-//            var decoderOfferModel: GradingMaterial?
-////            if data != nil {
-//            decoderOfferModel = try? decoder.decode(GradingMaterial.self, from: data)
-////            }
-//            
-//            print(decoderOfferModel)
-            
-//            let gradingJson = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-//
-//            guard let array = gradingJson as? [Any] else { return }
-//
-//            for user in array {
-//                guard let userDict = user as? [String : Any] else { return }
-//                print(userDict)
-//            }
-            
-            
-            
-//            let grading = try JSONDecoder().decode([String : Int].self, from: data)
-////            print(grading)
-//        } catch  {
-//            print(error)
-//        }
-        
-        
-    }
- 
-    
-    
+     
+    }   
 }
 
 extension GradesViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+     
+        return gradingMaterialDictionary.count - 1
     }
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "section \(section)"
+//        print (section)
+        if section == 1 {
+            self.name = "\(ColorBeltModel().nameSection)"
+        }
+        return name
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        print(self.gradingMaterialDictionary["colorBelts"]!.count!)
+        
+        if let colorBelts = self.gradingMaterialDictionary["colorBelts"] {
+            if let numberOfRowsInSectionCount = colorBelts.count {
+                self.numberOfSectionsInt = numberOfRowsInSectionCount
+            }
+             
+        }
+        
+       
+        return numberOfSectionsInt ?? 5
 
     }
     

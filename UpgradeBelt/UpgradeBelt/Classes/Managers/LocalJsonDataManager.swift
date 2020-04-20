@@ -10,32 +10,29 @@ import Foundation
 
 public class LocalJsonDataManager {
     
-    @Published var gradingMaterial = []
-    
-    init() {
-        load()
-//        sort()
+    static let shared = LocalJsonDataManager()
+    @Published var gradingMaterialDictionary = [String: AnyObject]()
+    private init() {
+        loadGradingMaterialFromLocalJson()
+        //        sort()
     }
     
-    func load() {
-        
-        if let fileLocation = Bundle.main.url(forResource: "grading", withExtension: "json") {
-            do {
-                 let data = try Data(contentsOf: fileLocation)
-                
-                let dataFromJson = try JSONDecoder().decode(GradingMaterial.self, from: data)
-                print(dataFromJson)
-               
-//                self.gradingMaterial = dataFromJson.blackBelts
-            } catch  {
-                print("Failed to decode JSON")
-                print(error)
-            }
+    func loadGradingMaterialFromLocalJson() {
+        guard let path = Bundle.main.path(forResource: "grading1", ofType: "json") else { return }
+        let url = URL(fileURLWithPath: path)
+        do {
+            let data = try Data(contentsOf: url)
+            let gradingJson = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+            guard let gradingDictionary = gradingJson as? [String: AnyObject] else { return }
+            self.gradingMaterialDictionary = gradingDictionary
+            
+        } catch  {
+            print(error)
         }
     }
     
     func sort() {
-//        self.gradingMaterial = self.gradingMaterial.sorted(by: { $0.id < $1.id })
+        //        self.gradingMaterial = self.gradingMaterial.sorted(by: { $0.id < $1.id })
     }
     
 }

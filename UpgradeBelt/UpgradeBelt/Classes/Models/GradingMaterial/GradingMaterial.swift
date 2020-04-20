@@ -9,8 +9,7 @@
 import Foundation
 
 struct GradingMaterial: Codable {
-    
-    var id: String
+    var id: Int
     var colorBelts: [GradingItem]
     var blackBelts: [GradingItem]
     

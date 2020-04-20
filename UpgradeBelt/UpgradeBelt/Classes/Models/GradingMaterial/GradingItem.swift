@@ -10,10 +10,11 @@ import Foundation
 
 class GradingItem: Codable {
     
-    var id: String
     var grade: String
-    var requirements: String
+    var id: Int
     var patterns: [GradingPattern]
+    var requirements: String
+    
     var terminology: [TerminologyItem]
 }
 

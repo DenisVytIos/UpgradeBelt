@@ -9,10 +9,8 @@
 import Foundation
 
 class GradingPattern: Codable {
-    
-
-    var id: String
-    var name: String
-    var movements: Int
+    var id: Int
     var meaning: String
+    var movements: Int
+    var name: String
 }

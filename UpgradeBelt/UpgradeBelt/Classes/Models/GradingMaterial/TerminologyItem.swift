@@ -10,7 +10,8 @@ import Foundation
 
 class TerminologyItem: Codable {
 
-    var id: String
+   
+     var Korean: String
     var English: String
-    var Korean: String
+    var id: Int
 }
